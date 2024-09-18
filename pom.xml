@@ -9,12 +9,12 @@
         <version>3.3.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>br.xksoberbado</groupId>
     <artifactId>mongodb-gridfs-example</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>mongodb-gridfs-example</name>
     <description>mongodb-gridfs-example</description>
-
 
     <properties>
         <java.version>21</java.version>

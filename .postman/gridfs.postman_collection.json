@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "38c27d1f-61d0-4064-ad0e-9223ba48a4ae",
+		"name": "gridfs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5527738"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/v1/files",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/006458/Downloads/naruto.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/v1/files",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/v1/files/:name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/files/:name",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"files",
+						":name"
+					],
+					"variable": [
+						{
+							"key": "name",
+							"value": "naruto.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/v1/files/:name",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/files/:name",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"files",
+						":name"
+					],
+					"variable": [
+						{
+							"key": "name",
+							"value": "naruto.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/v1/files/:name/download",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/files/:name/download",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"files",
+						":name",
+						"download"
+					],
+					"variable": [
+						{
+							"key": "name",
+							"value": "naruto.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,4 +1,4 @@
-package br.xksoberbado.mongogridfsexample.service;
+package br.xksoberbado.mongodbgridfsexample.service;
 
 import com.mongodb.client.gridfs.model.GridFSFile;
 import lombok.RequiredArgsConstructor;

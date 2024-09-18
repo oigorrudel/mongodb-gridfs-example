@@ -1,4 +1,4 @@
-package br.xksoberbado.mongogridfsexample;
+package br.xksoberbado.mongodbgridfsexample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

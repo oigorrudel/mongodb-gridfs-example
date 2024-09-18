@@ -1,6 +1,6 @@
-package br.xksoberbado.mongogridfsexample.web.controller;
+package br.xksoberbado.mongodbgridfsexample.web.controller;
 
-import br.xksoberbado.mongogridfsexample.service.FileService;
+import br.xksoberbado.mongodbgridfsexample.service.FileService;
 import com.mongodb.client.gridfs.model.GridFSFile;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
@@ -36,10 +36,8 @@ public class FileController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public String upload(@RequestParam final MultipartFile file) {
+    public void upload(@RequestParam final MultipartFile file) {
         service.create(file);
-
-        return file.getName();
     }
 
     @DeleteMapping("{name}")
